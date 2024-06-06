@@ -11,7 +11,7 @@
 
 ## Introduction
 
-More than your typical logger. Why not bring style to your logs? The OPNet LoggerNode library allows you to create and
+More than your typical logger. Why not bring style to your logs? The OPNet logger library allows you to create and
 style logs for your OPNet applications. Written in TypeScript!
 
 ## Getting Started
