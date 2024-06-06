@@ -1,4 +1,4 @@
-import { ILogger } from '../interfaces/ILogger';
+import { ILogger } from '../interfaces/ILogger.js';
 import { ChalkInstance } from 'chalk';
 export declare class SharedLogger implements ILogger {
     #private;
