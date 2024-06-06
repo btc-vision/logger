@@ -1,5 +1,6 @@
-import { ILogger } from '../interfaces/ILogger';
-import { lightenColor } from './SharedFunctions';
+import { ILogger } from '../interfaces/ILogger.js';
+import { lightenColor } from './SharedFunctions.js';
+
 import { Chalk, ChalkInstance } from 'chalk';
 
 export class SharedLogger implements ILogger {

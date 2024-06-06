@@ -1,6 +1,6 @@
 import { Chalk, ColorSupportLevel, Options } from 'chalk';
 import supportsColor from 'supports-color';
-import { SharedLogger } from './shared/SharedLogger';
+import { SharedLogger } from './shared/SharedLogger.js';
 
 let colorLevel: ColorSupportLevel = 0;
 if (supportsColor.stdout) {
