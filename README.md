@@ -1,4 +1,4 @@
-# OPNet - LoggerNode
+# OPNet - Logger
 
 ![Bitcoin](https://img.shields.io/badge/Bitcoin-000?style=for-the-badge&logo=bitcoin&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
@@ -47,9 +47,37 @@ npm i @btc-vision/logger
 Here's a basic example of how to use the OPNet Transaction Builder library to create and sign a transaction:
 
 ```typescript
-import { LoggerNode } from '@btc-vision/logger';
+import { Logger } from '@btc-vision/logger';
 
-TODO
+const logger = new Logger();
+
+logger.info('This is an info message');
+logger.warn('This is a warning message');
+logger.error('This is an error message');
+logger.debug('This is a debug message');
+logger.debugBright('This is a debug message');
+logger.traceLog('This is a trace message');
+logger.panic('This is a panic message');
+logger.securityNotice('This is a security notice message');
+logger.important('This is an important message');
+logger.fail('This is a fail message');
+logger.success('This is a success message');
+
+// ... or
+
+class MyFunClass extends Logger {
+    constructor() {
+        super();
+    }
+
+    public myFunMethod() {
+        this.info('This is an info message');
+        this.warn('This is a warning message');
+        this.error('This is an error message');
+        this.debug('This is a debug message');
+        // ...
+    }
+}
 ```
 
 ## Contribution
