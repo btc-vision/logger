@@ -1,6 +1,6 @@
 {
     "type": "module",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "author": "BlobMaster41",
     "description": "More than your typical logger. Why not bring style to your logs? The OPNet Logger library allows you to create and style logs for your OPNet applications. Written in TypeScript!",
     "engines": {
