@@ -399,9 +399,9 @@ FodyWeavers.xsd
 *.sln.iml
 
 package-lock.json
-
-cjs/*
-!cjs/package.json
 .idea
+yarn.lock
+browser
+build
 
 docs
