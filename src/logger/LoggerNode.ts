@@ -3,16 +3,17 @@ import supportsColor from 'supports-color';
 import { SharedLogger } from './shared/SharedLogger.js';
 
 let colorLevel: ColorSupportLevel = 0;
+
 if (supportsColor.stdout) {
     colorLevel = 1;
 }
 
-// @ts-ignore
+// @ts-expect-error - This is a private property
 if (supportsColor.stdout.has256) {
     colorLevel = 2;
 }
 
-// @ts-ignore
+// @ts-expect-error - This is a private property
 if (supportsColor.stdout.has16m) {
     colorLevel = 3;
 }
