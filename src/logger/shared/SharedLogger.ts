@@ -73,11 +73,7 @@ export class SharedLogger implements ILogger {
         );
     }
 
-    public log(
-        ...args: {
-            [Symbol.toPrimitive](): string;
-        }[]
-    ): void {
+    public log(...args: string[]): void {
         if (!this.enableLogs) return;
 
         if (!this.hideLogs) {
@@ -90,11 +86,7 @@ export class SharedLogger implements ILogger {
         }
     }
 
-    public lightOrangeLog(
-        ...args: {
-            [Symbol.toPrimitive](): string;
-        }[]
-    ): void {
+    public lightOrangeLog(...args: string[]): void {
         if (!this.enableLogs) return;
 
         if (!this.hideLogs) {
@@ -106,11 +98,7 @@ export class SharedLogger implements ILogger {
         }
     }
 
-    public error(
-        ...args: {
-            [Symbol.toPrimitive](): string;
-        }[]
-    ): void {
+    public error(...args: string[]): void {
         if (!this.enableLogs) return;
 
         console.log(
@@ -119,11 +107,7 @@ export class SharedLogger implements ILogger {
         );
     }
 
-    public warn(
-        ...args: {
-            [Symbol.toPrimitive](): string;
-        }[]
-    ): void {
+    public warn(...args: string[]): void {
         if (!this.enableLogs) return;
 
         console.log(
@@ -132,11 +116,7 @@ export class SharedLogger implements ILogger {
         );
     }
 
-    public debug(
-        ...args: {
-            [Symbol.toPrimitive](): string;
-        }[]
-    ): void {
+    public debug(...args: string[]): void {
         if (!this.enableLogs) return;
 
         if (!this.hideLogs) {
@@ -147,11 +127,7 @@ export class SharedLogger implements ILogger {
         }
     }
 
-    public success(
-        ...args: {
-            [Symbol.toPrimitive](): string;
-        }[]
-    ): void {
+    public success(...args: string[]): void {
         if (!this.enableLogs) return;
 
         if (!this.hideLogs) {
@@ -163,11 +139,7 @@ export class SharedLogger implements ILogger {
         }
     }
 
-    public fail(
-        ...args: {
-            [Symbol.toPrimitive](): string;
-        }[]
-    ): void {
+    public fail(...args: string[]): void {
         if (!this.enableLogs) return;
 
         if (!this.hideLogs) {
@@ -178,11 +150,7 @@ export class SharedLogger implements ILogger {
         }
     }
 
-    public debugBright(
-        ...args: {
-            [Symbol.toPrimitive](): string;
-        }[]
-    ): void {
+    public debugBright(...args: string[]): void {
         if (!this.enableLogs) return;
 
         if (!this.hideLogs) {
@@ -194,11 +162,7 @@ export class SharedLogger implements ILogger {
         }
     }
 
-    public important(
-        ...args: {
-            [Symbol.toPrimitive](): string;
-        }[]
-    ): void {
+    public important(...args: string[]): void {
         if (!this.enableLogs) return;
 
         console.log(
@@ -207,11 +171,7 @@ export class SharedLogger implements ILogger {
         );
     }
 
-    public panic(
-        ...args: {
-            [Symbol.toPrimitive](): string;
-        }[]
-    ): void {
+    public panic(...args: string[]): void {
         if (!this.enableLogs) return;
 
         console.log(
@@ -221,11 +181,7 @@ export class SharedLogger implements ILogger {
         );
     }
 
-    public info(
-        ...args: {
-            [Symbol.toPrimitive](): string;
-        }[]
-    ): void {
+    public info(...args: string[]): void {
         if (!this.enableLogs) return;
 
         console.log(
@@ -234,11 +190,7 @@ export class SharedLogger implements ILogger {
         );
     }
 
-    public securityNotice(
-        ...args: {
-            [Symbol.toPrimitive](): string;
-        }[]
-    ): void {
+    public securityNotice(...args: string[]): void {
         if (!this.enableLogs) return;
 
         console.log(
@@ -248,11 +200,7 @@ export class SharedLogger implements ILogger {
         );
     }
 
-    public traceLog(
-        ...args: {
-            [Symbol.toPrimitive](): string;
-        }[]
-    ): void {
+    public traceLog(...args: string[]): void {
         if (!this.enableLogs) return;
 
         console.log(
