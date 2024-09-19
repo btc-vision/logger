@@ -9,6 +9,7 @@
     },
     "exports": {
         ".": {
+            "browser": "./browser/index.js",
             "import": "./build/node.js",
             "require": "./build/node.js",
             "types": "./build/node.d.ts"
@@ -18,6 +19,10 @@
             "require": "./browser/index.js",
             "types": "./browser/index.d.ts"
         }
+    },
+    "browser": {
+        "./build/index.js": "./browser/index.js",
+        "./build/index.d.ts": "./browser/index.d.ts"
     },
     "homepage": "https://opnet.org",
     "keywords": [

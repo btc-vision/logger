@@ -1,5 +1,6 @@
 export default {
     mode: 'production',
+    target: 'web',
     entry: './src/index.ts',
     watch: false,
     output: {
