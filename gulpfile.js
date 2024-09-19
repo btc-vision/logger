@@ -15,7 +15,7 @@ const tsProject = ts.createProject('tsconfig.json');
 function buildESM() {
     return tsProject
         .src()
-        .pipe(gulpcache('ts-esm'))
+        .pipe(gulpcache())
         .pipe(
             logger({
                 before: 'Starting...',
