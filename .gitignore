@@ -403,5 +403,6 @@ package-lock.json
 yarn.lock
 browser
 build
+cjs
 
 docs
