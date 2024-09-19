@@ -73,11 +73,11 @@ export class SharedLogger implements ILogger {
         );
     }
 
-    public log(...args: any[]): void {
+    public log(...args: string[]): void {
         if (!this.enableLogs) return;
 
         if (!this.hideLogs) {
-            let light = lightenColor(this.logColor, 15);
+            const light = lightenColor(this.logColor, 15);
             console.log(
                 this.chalk.hex(this.logColor)(
                     `${this.getStartPrefix()}[${this.moduleName} LOG]: `,
@@ -86,7 +86,7 @@ export class SharedLogger implements ILogger {
         }
     }
 
-    public lightOrangeLog(...args: any[]): void {
+    public lightOrangeLog(...args: string[]): void {
         if (!this.enableLogs) return;
 
         if (!this.hideLogs) {
@@ -98,7 +98,7 @@ export class SharedLogger implements ILogger {
         }
     }
 
-    public error(...args: any[]): void {
+    public error(...args: string[]): void {
         if (!this.enableLogs) return;
 
         console.log(
@@ -107,7 +107,7 @@ export class SharedLogger implements ILogger {
         );
     }
 
-    public warn(...args: any[]): void {
+    public warn(...args: string[]): void {
         if (!this.enableLogs) return;
 
         console.log(
@@ -116,7 +116,7 @@ export class SharedLogger implements ILogger {
         );
     }
 
-    public debug(...args: any[]): void {
+    public debug(...args: string[]): void {
         if (!this.enableLogs) return;
 
         if (!this.hideLogs) {
@@ -127,7 +127,7 @@ export class SharedLogger implements ILogger {
         }
     }
 
-    public success(...args: any[]): void {
+    public success(...args: string[]): void {
         if (!this.enableLogs) return;
 
         if (!this.hideLogs) {
@@ -139,7 +139,7 @@ export class SharedLogger implements ILogger {
         }
     }
 
-    public fail(...args: any[]): void {
+    public fail(...args: string[]): void {
         if (!this.enableLogs) return;
 
         if (!this.hideLogs) {
@@ -150,7 +150,7 @@ export class SharedLogger implements ILogger {
         }
     }
 
-    public debugBright(...args: any[]): void {
+    public debugBright(...args: string[]): void {
         if (!this.enableLogs) return;
 
         if (!this.hideLogs) {
@@ -162,7 +162,7 @@ export class SharedLogger implements ILogger {
         }
     }
 
-    public important(...args: any[]): void {
+    public important(...args: string[]): void {
         if (!this.enableLogs) return;
 
         console.log(
@@ -171,7 +171,7 @@ export class SharedLogger implements ILogger {
         );
     }
 
-    public panic(...args: any[]): void {
+    public panic(...args: string[]): void {
         if (!this.enableLogs) return;
 
         console.log(
@@ -181,7 +181,7 @@ export class SharedLogger implements ILogger {
         );
     }
 
-    public info(...args: any[]): void {
+    public info(...args: string[]): void {
         if (!this.enableLogs) return;
 
         console.log(
@@ -190,7 +190,7 @@ export class SharedLogger implements ILogger {
         );
     }
 
-    public securityNotice(...args: any[]): void {
+    public securityNotice(...args: string[]): void {
         if (!this.enableLogs) return;
 
         console.log(
@@ -200,7 +200,7 @@ export class SharedLogger implements ILogger {
         );
     }
 
-    public traceLog(...args: any[]): void {
+    public traceLog(...args: string[]): void {
         if (!this.enableLogs) return;
 
         console.log(

@@ -1,6 +1,6 @@
 export function lightenColor(color: string, percent: number) {
     color = color.replace('#', '');
-    let num = parseInt(color, 16),
+    const num = parseInt(color, 16),
         amt = Math.round(2.55 * percent),
         R = (num >> 16) + amt,
         B = ((num >> 8) & 0x00ff) + amt,
